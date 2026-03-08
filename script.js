@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ================================================
     
     const heroSection = document.querySelector('.hero');
-    const heroVideo = document.querySelector('.hero-video');
+    const heroBgImage = document.querySelector('.hero-bg-image');
     
     window.addEventListener('scroll', function() {
         const scrollPosition = window.pageYOffset;
@@ -219,8 +219,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const heroHeight = heroSection.offsetHeight;
             if (scrollPosition < heroHeight) {
                 const parallaxValue = scrollPosition * 0.4;
-                if (heroVideo) {
-                    heroVideo.style.transform = `translateY(${parallaxValue}px)`;
+                if (heroBgImage) {
+                    heroBgImage.style.transform = `translateY(${parallaxValue}px)`;
                 }
             }
         }
